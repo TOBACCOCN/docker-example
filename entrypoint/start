@@ -1,0 +1,3 @@
+#!/bin/bash
+# param [-i] could be param as entrypoint
+sudo docker run simple_curl -i

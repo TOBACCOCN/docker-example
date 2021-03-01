@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+MAINTAINER zyh
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN apt update && apt install -y curl
+ENTRYPOINT ["curl", "-s", "ifconfig.me"]

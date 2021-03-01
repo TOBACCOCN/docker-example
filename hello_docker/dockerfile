@@ -1,0 +1,5 @@
+from alpine:latest
+maintainer zyh
+CMD echo "hello docker"
+CMD ["172.18.0.2"]
+ENTRYPOINT ["ping"]

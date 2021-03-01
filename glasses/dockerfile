@@ -1,0 +1,6 @@
+FROM java:8
+MAINTAINER zyh
+ADD smart_glass.jar glasses.jar 
+EXPOSE 8443
+EXPOSE 8442
+ENTRYPOINT ["java","-jar","glasses.jar"]
